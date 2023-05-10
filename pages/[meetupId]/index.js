@@ -66,7 +66,7 @@ export async function getStaticProps(context){
     //this params key will be a object where identifier between the suqare breacket will be property, and the value will be actual value
     //that coded in URL , so here the params attribute is meetupId, because that is the identifier here in the square breacket 
     const meetupId = context.params.meetupId;
-    console.log(meetupId)
+    
 
     const client = await MongoClient.connect('mongodb+srv://user_0:ffang2198@cluster0.1hgvdjv.mongodb.net/?retryWrites=true&w=majority')
     const db = client.db();
